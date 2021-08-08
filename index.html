@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <nav>
+        <div class="left-brand">
+            <img src="./assets/Graven_-_Logo.png" class="logo">
+        </div>
+        <div class="right-brand">
+            <ul>
+                <a href="#home"><li class="hover">Home</li></a>
+                <a href="#technologies"><li class="hover">Technologies</li></a>
+                <a href="#about"><li class="hover">About</li></a>
+                <a><li class="hover">Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="big-container" id="home">
+        <div class="background">
+            <div class="gray"></div>
+        </div>
+        <div class="container">
+            <h1>Full-stack Web Developer.</h1>
+            <p>Based in France, Graven is a youtuber and a web developer . He do tutorials to learn programmation.<br>You can contact Graven to ask a question.</p>
+            <button>I need a website&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <div class="big-container" id="technologies">
+        <div class="background-2">
+            <div class="gray"></div>
+        </div>
+        <div class="container-2">
+            <h2>What I do</h2>
+            <div class="row">
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/logo.png" alt="" class="img-program">
+                    </div>
+                    <div class="txt">HTML</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/css.svg" alt="" class="img-program">
+                    </div>
+                    <div class="txt">CSS</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/js.png" alt="" class="img-program border">
+                    </div>
+                    <div class="txt">JS</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/python.png" alt="" class="img-program">
+                    </div>
+                    <div class="txt">PYTHON</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/c.png" alt="" class="img-program">
+                    </div>
+                    <div class="txt">C</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/sql.png" alt="" class="img-program">
+                    </div>
+                    <div class="txt">MYSQL</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/postresql.png" alt="" class="img-program">
+                    </div>
+                    <div class="txt">POSTGRES</div>
+                </div>
+                <div class="frame">
+                    <div class="center">
+                        <img src="./assets/docker.png" alt="" class="img-program">
+                    </div>
+                    <div class="txt">DOCKER</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="big-container" id="about">
+        <div class="background-3"></div>
+        <div class="container-3">
+            <img src="./assets/graven3.jpg" class="graven" alt="" srcset="">
+            <div class="long-txt">
+                <h3>Hello!<br>I'm Graven.</h3>
+                <p class="very">I'm a <b class="blue">developer web Fullstack and Mobile</b>.<br>I programming since <b class="blue">6 years</b>. I work on freelance since <b class="blue">2 years</b>.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis eaque corrupti sapiente dolorem magni voluptatibus, ad facilis quisquam, alias, quia ea culpa similique ipsum! Corrupti saepe voluptatem debitis fuga! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore cum ad quasi velit expedita fugit possimus consectetur odio recusandae dignissimos iusto minus id laboriosam veritatis nesciunt veniam labore, incidunt assumenda?</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $("a").click(function(){
+        if($(this).children().text() == "About"){
+            $(this).parents("nav").css("background", "#2a2a2e")
+            $(this).parents("nav").css("box-shadow", "0px 4px 10px")
+        }
+
+        if($(this).children().text() == "Home" || $(this).children().text() == "Technologies"){
+            $(this).parents("nav").css("background", "none")
+            $(this).parents("nav").css("box-shadow", "none")
+        }
+    })
+</script>
+</html>
